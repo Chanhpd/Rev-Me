@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    tools:context=".view.assessment.fragmentQuestion.Page17Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="40dp"
+                android:text="Assessment"
+                android:textColor="@color/text_black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView28"
+                tools:layout_editor_absoluteX="16dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Body Analysis"
+                    android:textColor="@color/text_black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/btn_nextFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_btn_black"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_end">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Get Plan  💪"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.9"
+                    android:src="@drawable/body_analysis"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Obesity Level  :"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+                <TextView
+
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Advice :"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView38"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                <TextView
+                    android:id="@+id/textView_ob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:text="Normal"
+                    android:textColor="#DD2C00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView38"
+                    app:layout_constraintStart_toEndOf="@+id/textView38"
+                    app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+                <TextView
+                    android:id="@+id/textView_advice"
+                    android:layout_width="0dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="You are at Overweight Type III. Lifestyle changes are necessary to improve your health."
+                    android:textColor="@color/normal_text"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView32"
+                    app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                <TextView
+                    android:id="@+id/textView95"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Goal type"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView_advice"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_advice" />
+
+                <TextView
+                    android:id="@+id/tv_goal_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="Goal type"
+                    android:textColor="@color/normal_text"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView95"
+                    app:layout_constraintStart_toEndOf="@+id/textView95"
+                    app:layout_constraintTop_toTopOf="@+id/textView95"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView104"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Target Weight"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView95"
+                    app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+                <TextView
+                    android:id="@+id/textView105"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duration Weeks"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtDurationWeeks"
+                    app:layout_constraintStart_toStartOf="@+id/textView104"
+                    app:layout_constraintTop_toTopOf="@+id/edtDurationWeeks" />
+
+                <EditText
+                    android:id="@+id/edtTargetWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:background="@drawable/bg_edit_text_app"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingStart="16dp"
+                    android:text="..."
+                    app:layout_constraintBottom_toBottomOf="@+id/textView104"
+                    app:layout_constraintStart_toEndOf="@+id/textView104"
+                    app:layout_constraintTop_toTopOf="@+id/textView104" />
+
+                <EditText
+                    android:paddingStart="16dp"
+                    android:id="@+id/edtDurationWeeks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_edit_text_app"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="..."
+                    app:layout_constraintStart_toStartOf="@+id/edtTargetWeight"
+                    app:layout_constraintTop_toBottomOf="@+id/edtTargetWeight" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Start Date"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView105"
+                    app:layout_constraintTop_toBottomOf="@+id/edtDurationWeeks" />
+
+                <TextView
+                    android:id="@+id/textView103"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="End date"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                    app:layout_constraintStart_toEndOf="@+id/textView20"
+                    app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/tv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="12/12/1222"
+                    android:textColor="@color/normal_text"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView105"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/tv_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/12/2112"
+                    android:textColor="@color/normal_text"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView103"
+                    app:layout_constraintTop_toTopOf="@+id/tv_start" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

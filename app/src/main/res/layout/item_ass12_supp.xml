@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:textColor="@drawable/custom_radio_text"
+        android:id="@+id/checkBox_ass12"
+        android:drawableEnd="@drawable/custom_radio_drawable"
+        android:textSize="16sp"
+        android:background="@drawable/custom_radio_ass9_selector"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Whey"
+        android:button="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

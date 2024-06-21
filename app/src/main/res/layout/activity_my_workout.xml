@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.detail.MyWorkoutActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_13_border"
+        android:paddingBottom="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37">
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/numberPicker_food"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:np_dividerColor="@color/app_color"
+            app:np_dividerType="underline"
+            app:np_formatter="%02d"
+            app:np_max="31"
+            app:np_min="1"
+            app:np_orientation="horizontal"
+            app:np_selectedTextColor="@color/app_color"
+            app:np_selectedTextSize="28dp"
+            app:np_textSize="28dp"
+            app:np_value="23"
+            app:np_wheelItemCount="7" />
+
+        <TextView
+            android:id="@+id/textView_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="May"
+            android:textColor="@color/app_color"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberPicker_food" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/text_black"
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="My workouts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="All Schedule"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_13_border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:srcCompat="@drawable/ic_baseline_access_time_filled_24" />
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13:00"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_13_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/textView77">
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ass10_weightlift" />
+
+        <TextView
+            android:id="@+id/textView94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:text="Chest Workout"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView41"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView94"
+            app:layout_constraintStart_toEndOf="@+id/textView97"
+            app:layout_constraintTop_toBottomOf="@+id/textView94"
+            app:srcCompat="@drawable/ic_baseline_access_time_filled_24" />
+
+        <TextView
+            android:id="@+id/textView96"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="25 min"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView43"
+            app:layout_constraintStart_toEndOf="@+id/imageView43"
+            app:layout_constraintTop_toTopOf="@+id/imageView43" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textView94"
+            app:layout_constraintTop_toBottomOf="@+id/textView94"
+            app:srcCompat="@drawable/fram" />
+
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="50 reps"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView44"
+            app:layout_constraintStart_toEndOf="@+id/imageView44"
+            app:layout_constraintTop_toTopOf="@+id/imageView44" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout9"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_13_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:text="Back Workout"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView45"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView45"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ass10_weightlift" />
+
+        <ImageView
+            android:id="@+id/imageView46"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textView98"
+            app:layout_constraintTop_toBottomOf="@+id/textView98"
+            app:srcCompat="@drawable/fram" />
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="25 reps"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView46"
+            app:layout_constraintStart_toEndOf="@+id/imageView46"
+            app:layout_constraintTop_toTopOf="@+id/imageView46" />
+
+        <ImageView
+            android:id="@+id/imageView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/textView99"
+            app:layout_constraintTop_toBottomOf="@+id/textView98"
+            app:srcCompat="@drawable/ic_baseline_access_time_filled_24" />
+
+        <TextView
+            android:id="@+id/textView100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="20 min"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView47"
+            app:layout_constraintStart_toEndOf="@+id/imageView47"
+            app:layout_constraintTop_toTopOf="@+id/imageView47" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_13_border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout9"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout9">
+
+        <ImageView
+            android:id="@+id/imageView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_access_time_filled_24" />
+
+        <TextView
+            android:id="@+id/textView101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12: 00"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
